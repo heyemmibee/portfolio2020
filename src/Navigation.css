@@ -1,0 +1,46 @@
+
+.rainbow-bridge {
+    width: 100%;
+    height: 1rem;
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(224, 105, 183) 13%, rgb(230, 49, 49) 26%, rgb(247, 143, 47) 39%, rgb(244, 193, 81) 52%, rgb(59, 214, 113) 65%, rgb(43, 123, 228) 78%, rgb(158, 13, 172) 91%, rgb(224, 105, 183) 100%) ;
+    background-size: 250%;
+    animation: colorSlide 15s linear infinite;
+    }
+
+    @keyframes colorSlide{
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+  
+.Navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 2rem 0 2rem;
+    color:black;
+    background-color: white;
+    height: 20vh;
+
+}
+
+.nav-logo {
+    border-radius: 20% 0% 20% 0%;
+    width:100px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.Navmenu {
+    display: flex;
+    flex-direction: row;
+}
+
+.Navmenu h3 {
+    letter-spacing: .10rem;
+    padding-right:15px;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: end;
+}

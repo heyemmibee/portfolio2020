@@ -1,40 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
 body {
+  font-family: 'Titillium Web';
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.App {
+h1 {
   text-align: center;
-  background-color: rgb(34, 34, 34);
-  height: 100vh;
-  color: rgb(250, 250, 250);
-  padding-top: 1.5rem;
-}
-.App-title {
-  font-size: 36px;
-  margin: 2rem auto;
-  color:hotpink;
+  font-weight: 400;
 }
 
 .Timers {
   display: flex;
   justify-content: center;
 }
+
 @media (max-width: 900px) {
   .Timers {
     flex-direction: column;
@@ -114,3 +94,27 @@ button:hover {
   margin: 5px 0;
 }
 
+.container {
+  display: flex;
+  background-color: white;
+  padding: 1rem 0;
+  height: 20rem;
+  width: 600px;
+  margin: auto;
+}
+
+.square1, .square2 {
+  border: 4pt solid black;
+  margin: .5rem .5rem;
+}
+
+.square1 {
+  border-color: blue;
+  flex: 1;
+}
+
+.square2 {
+width: calc(20rem * 3);
+border-color: black;
+flex: 2;
+}
